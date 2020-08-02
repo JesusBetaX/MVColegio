@@ -1,0 +1,65 @@
+/* Custom CSS */
+/* Set top padding of the page to match the height of the navbar */
+body {
+    font-family:sans-serif;
+    padding-top: 70px;
+    color: #555555;
+}
+/* Ugly hacks to fix the container within navbar functionality - should be fixed in Bootstrap 4 beta */
+.navbar-toggler {
+    z-index: 1;
+}
+@media (max-width: 576px) {
+    nav > .container {
+        width: 100%;
+    }
+}
+/* Navbar. */
+.navbar {
+    border: none;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.navbar-default {
+    background-color: #fff;
+}
+/* CSS para el logo del navbar. */
+.navbar-brand {
+	padding:12px 15px 12px
+}
+.navbar-brand > img {
+	display:inline;margin:0 10px;height:100%
+}
+/* text */
+a {
+    color: #2196f3;
+    text-decoration: none;
+}
+/* jumbotron, well, breadcrumb, panel-footer */
+.jumbotron, .well, .breadcrumb, .panel-footer {
+    background-color: #f5f5f5;
+}
+/* Paneles. */
+.panel {
+    border: none;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+.panel-primary > .panel-heading {
+    color: #fff;
+    background-color: #2196f3;
+    border-color: #2196f3;
+}
+/* Bottom*/
+.btn-primary {
+    color: #fff;
+    background-color: #2196f3;
+    border-color: #1995dc;
+}
+/* CSS para los errores de los input con jquery-validator. */
+.has-error small {
+    color:#e51c23;font-weight:normal;margin-left:5px;
+}
+.footer {
+  padding-top: 96px;  
+}
